@@ -1,0 +1,12 @@
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.toc
+*.swp
+*.bbl
+*.blg
+*.out
+tex-studio*
+scripts/__pycache__/
+

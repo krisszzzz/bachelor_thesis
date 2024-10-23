@@ -1,0 +1,37 @@
+\documentclass{article}
+\usepackage{cmap}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage[a4paper, left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+\usepackage{setspace}
+\usepackage{tikz}
+\usepackage{titlesec}
+\usepackage{ifthen}
+\usepackage{color}
+\usepackage{amsmath}
+
+\usepackage[unicode, pdftex]{hyperref}
+
+\title{Разработка методов планирования потоков графических процессоров общего назначения}
+\author{Дедков Денис}
+
+\bibliographystyle{ugost2008l}
+
+\begin{document}
+	
+	\maketitle
+	\tableofcontents
+	
+	\input{src/content/abstract.tex}
+	\input{src/content/intro.tex}
+	\input{src/content/problem.tex}
+	\input{src/content/cross-research.tex}
+	
+%	\input{src/content/conclusion.tex}
+%	\input{src/content/references.tex}
+
+	% ГОСТ оформление ссылок
+
+	\bibliography{src/references.bib}
+
+\end{document}
