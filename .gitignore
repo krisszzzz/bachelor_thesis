@@ -9,4 +9,5 @@
 *.out
 tex-studio*
 scripts/__pycache__/
+build/
 

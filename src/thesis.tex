@@ -1,8 +1,8 @@
-\documentclass{article}
+\documentclass[a4paper, 12pt]{article}
 \usepackage{cmap}
 \usepackage[utf8]{inputenc}
 \usepackage[english,russian]{babel}
-\usepackage[a4paper, left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+\usepackage[a4paper, left=3cm, right=1.5cm, top=2cm, bottom=2cm]{geometry}
 \usepackage{setspace}
 \usepackage{tikz}
 \usepackage{titlesec}
@@ -11,27 +11,36 @@
 \usepackage{amsmath}
 
 \usepackage[unicode, pdftex]{hyperref}
+\linespread{1.4}
 
-\title{Разработка методов планирования потоков графических процессоров общего назначения}
-\author{Дедков Денис}
+\usepackage[
+    style=gost-numeric,
+    language=auto,
+    autolang=other
+]{biblatex}
 
-%\bibliographystyle{ugost2008l}
+\addbibresource{src/references.bib}
 
 \begin{document}
 	
-	\maketitle
-	\tableofcontents
-	
+    Привет, друг \cite{bolzano:pb} как есть \cite{CCWS}
+
+	\input{src/content/title.tex}
 	\input{src/content/abstract.tex}
+	
+	\tableofcontents
+	\clearpage
+	
 	\input{src/content/intro.tex}
 	\input{src/content/problem.tex}
 	\input{src/content/cross-research.tex}
-	
+	\clearpage
+
 %	\input{src/content/conclusion.tex}
 %	\input{src/content/references.tex}
 
 	% ГОСТ оформление ссылок
-	\bibliographystyle{plain}
-	\bibliography{src/references.bib}
+
+    \printbibliography
 
 \end{document}
