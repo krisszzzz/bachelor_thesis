@@ -1,4 +1,5 @@
 \documentclass[a4paper, 12pt]{article}
+
 \usepackage{cmap}
 \usepackage[utf8]{inputenc}
 \usepackage[english,russian]{babel}
@@ -9,21 +10,18 @@
 \usepackage{ifthen}
 \usepackage{color}
 \usepackage{amsmath}
-
 \usepackage[unicode, pdftex]{hyperref}
-\linespread{1.4}
-
 \usepackage[
     style=gost-numeric,
     language=auto,
     autolang=other
 ]{biblatex}
 
+\linespread{1.4}
+
 \addbibresource{src/references.bib}
 
 \begin{document}
-	
-    Привет, друг \cite{bolzano:pb} как есть \cite{CCWS}
 
 	\input{src/content/title.tex}
 	\input{src/content/abstract.tex}
@@ -38,8 +36,6 @@
 
 %	\input{src/content/conclusion.tex}
 %	\input{src/content/references.tex}
-
-	% ГОСТ оформление ссылок
 
     \printbibliography
 
