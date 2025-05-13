@@ -1,5 +1,6 @@
 \documentclass[a4paper, 12pt]{article}
 
+\usepackage{secdot}
 \usepackage{cmap}
 \usepackage[utf8]{inputenc}
 \usepackage[english,russian]{babel}
@@ -17,6 +18,7 @@
     autolang=other
 ]{biblatex}
 
+
 \linespread{1.4}
 
 \addbibresource{src/references.bib}
@@ -30,11 +32,22 @@
 	\clearpage
 	
 	\input{src/content/intro.tex}
-	\input{src/content/problem.tex}
-	\input{src/content/cross-research.tex}
 	\clearpage
 
-%	\input{src/content/conclusion.tex}
+	\input{src/content/problem.tex}
+	\clearpage
+
+	\input{src/content/tools.tex}
+	\clearpage
+	\input{src/content/ws.tex}
+	\clearpage
+	\input{src/content/bs.tex}
+	\clearpage
+	\input{src/content/rm.tex}
+	\clearpage
+
+	\input{src/content/conclusion.tex}
+	\clearpage
 %	\input{src/content/references.tex}
 
     \printbibliography
